@@ -1,0 +1,100 @@
+.nav2{
+    border-width: 3px;
+    border-color: black;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav2 tr td{
+    background-color: #264653;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav2 a:hover:not(.active){
+    color:#faedcb;
+}
+
+.nav2 a.active{
+    background-color: #e76f51;
+    color:#faedcb;
+}
+
+.nav2 a{
+    color: #e76f51;
+    padding: 3.25px 3.25px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+    text-align: center;
+}
+
+.left{
+    margin: 25px 120px;
+}
+
+.left-profile{
+    border :1px solid #000;
+    border-collapse: collapse;
+    width :50%;
+    margin: 25px 120px;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+
+.left-profile th,
+.left-profile td {
+    padding: 12px 15px;
+}
+.left-profile th{
+    background-color: #e76f51;
+}
+.left-profile tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.left-profile tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.left-profile tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.tableHead {
+    margin: 25px 120px;
+    width :50%;
+    text-align: left;
+}
+
+.Admin{
+    width :200px;
+    clip-path: circle();
+    float:right;
+    clear:right;
+    margin-top : 70px;
+    margin-right: 180px;
+}
+
+.right-bottom img {
+    border: 10px solid #f3f3f3;
+    width :25%;
+    height: 65%;
+    float:right;
+    clear:right;
+    margin:75px 80px 80px 20px;
+}
+
+#welcomeid{
+    padding-top:50px;
+    font: Broadway;
+    float:right;
+    clear:right;
+    position: absolute;
+    /* bottom: 8px; */
+    right: 16px;
+    margin:25px 112px;
+}

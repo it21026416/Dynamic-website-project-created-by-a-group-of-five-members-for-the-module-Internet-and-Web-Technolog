@@ -1,0 +1,72 @@
+/*Careers*/
+.main_heading{
+    color:#264653;
+    text-align:left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 2px;
+    margin-top:10px;
+    margin-left: 210px;
+    font-size:50px;
+}
+.career_content{
+    text-align:left;
+    margin-top:20px;
+    margin-left: 210px;
+    margin-right: 210px;
+    margin-bottom: 20px;
+}
+.sub_heading{
+    color:#264653;
+    text-align:left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 2px;
+    margin-top:10px;
+    margin-left: 210px;
+    font-size:40px;
+
+}
+*{
+    box-sizing: border-box;
+}
+.column{
+    float:left;
+    width:35.99%;
+    padding-right: 10px;
+    height:300px;
+    border-color: black;
+    text-align: left;
+    margin-right: 170px;
+    margin-left:5px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.row::after{
+    content:normal;
+    display:table;
+    clear:both;
+    padding-top: 40px;
+    padding-left:1000px;
+    padding-right:100px;
+
+}
+/*WHole three column adjusted starts here*/
+.row{
+    padding-top: 20px;
+    padding-left: 205px;
+    padding-bottom: 500px;
+}
+/*WHole three column adjustion ends here*/
+button a{
+    text-decoration: none;
+    font-size: 17px;
+    color:black;
+    padding:15px 32px;
+    
+}
+button{
+    margin-top:px;
+    margin-bottom: 0px;
+}
+/*End of career formats*/

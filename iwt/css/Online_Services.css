@@ -1,0 +1,45 @@
+/*online services*/
+.button{
+  display: inline-block
+  text-align:center;
+  background-color:#29274C;
+  font-family:"verdana";
+  color:rgb(226, 212, 212);
+  width:100%;
+  height:30px;
+  cursor: pointer;
+  padding:15px;
+
+  
+}
+.button:hover {
+  background-color: red;
+
+}
+button:active {
+  background-color: orange;
+  
+}
+bodyimg{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.content{
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+}
+

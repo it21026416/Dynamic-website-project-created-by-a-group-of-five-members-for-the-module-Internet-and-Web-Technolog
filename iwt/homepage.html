@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=One, initial-scale=1.0">
+    <link rel = "stylesheet" href= "css/styles.css">
+    <link rel = "stylesheet" href= "css/homepage.css">
+    <script type = "text/javascript" src="js/homepage.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>One Future Insurance</title>
+</head>
+
+<body>
+    <div class = "floatBody">
+        <nav class = "nav1">
+            <!-- Header -->
+            <div class="logo">
+                <h4>One Future Insurance</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a class = "active" href = "homepage.html">Home</a></li>
+                <li><a href = "plans.html">Plans</a></li>
+                <li><a href = "Online_Services.html">Online Services</a></li>
+                <li><a href = "AboutUs.html">About Us</a></li>
+                <li><a href = "Careers.html">Careers</a></li>
+                <li><a href = "#">Contact Us</a></li>
+                <li><a href = "#">Events & News</a></li>
+                <li><a href = "login.php">Login in</a></li>
+
+            </ul>
+        </nav>
+        
+        <!-- <h1 style = "text-align: center;padding:280px;">Content</h1> -->
+
+        <div class="container">
+            <img src="images/children homepage.jpg" alt="Snow" style="width:100%;">
+            <div class="centered">
+                <h2>YOU DREAM IT. </h2>
+                <h2>WE'LL HELP YOU LIVE IT.</h2>
+                <p>Faster, Higher, Stronger</p>
+            </div>
+          </div>
+
+          <center>
+            <table class = "nav2">
+                <tr>
+                    <td><button onclick = "loaddata('btn1');" id = "btn1" class="btn">Planning</button></td>
+                    <!-- create a button to go to plan page -->
+                    <td><button onclick = "loaddata('btn2');" id = "btn2" class="btn">Get to Know us</button></td>
+                    <td><button onclick = "loaddata('btn3');" id = "btn3" class="btn">Lets get acquainted</button></td>
+
+                </tr>
+            </table>
+
+            <div class = "txt" id = "Showme1">
+                <p id = "JsInput">Since everyone's situation and goals are different,
+                 our policies are designed differently, too. Depending 
+                 on what you need, our life insurance can simply be your
+                 safety net from the unexpected, or it can be the foundation
+                 of a smart financial plan, giving you more financial flexibility 
+                 for the things that are important during your life like paying for
+                 college, growing your business, and having more income in retirement.</p>
+                 <ul>
+                     <li>A personalized plan that brings all aspects of your financial life together</li>
+                     <li>A strategic mix of insurance and investments working together for your goals</li>
+                     <li>Your go-to financial expert who helps keep your big picture, and dreams, in focus</li>
+                 </ul>
+
+                 <button id = "plan" class = "txtbtn" onclick="location.href = 'plans.html'">Pick your plan</button>
+            </div>
+
+            <div id="Showme2" style="display:none;">
+                <p id = "JsInput">One Future started of as a small closet company who only had one goal,
+                                and that was creating a future for their customers with ease and care. We vowed
+                                vowed to carefully craft plans and projects to set out into the big world.
+                                And here we are with <b>millions all over the world to help us help you</b>. 
+                                Rest assured you will not be dissapointed.</p>
+                 
+
+                 <button id = "about us" class = "txtbtn" onclick="location.href = 'AboutUs.html'">Check us out</button>
+            </div>
+
+            <div id="Showme3" style="display:none;">
+                <p id = "JsInput">Lets get to know eachother, Its you us and whole world your missing out on</p>
+                 
+
+                 <button id = "register" class = "txtbtn" onclick="location.href = 'register.html'">Register</button>
+                 <br><button id = "contactUs" class = "txtbtn" onclick="location.href = '#'">Contact us</button>
+            </div>
+
+            <br><br><br><br><br>
+        
+            <h1 id = "headerforFAQ">You've got Life Insurance questions, we've got answers.</h1>
+            <div class = "r1">
+                    <div class = "row">
+                        <div class="column" ">
+                            <h3>What is Life Insurance</h3>
+                            <p>Life insurance is simple. You make reoccurring payments (your premium), and we pay a set amount of money, tax-free, to whoever you choose (your beneficiaries),
+                            including your favorite charities if you want, when you pass away.</p>
+                        </div>
+                        <div class="column" >
+                            <h3>Why do I need a life insurance policy?</h3>
+                            <p>Life insurance helps cover expenses like a mortgage, debts, your kids’ tuition, even replacing lost income when you’re no longer here. Depending on the type you get, it can be the foundation for a sound
+                                financial plan and help with expenses during your life.</p>
+                        </div>
+                        <div class="column" >
+                            <h3>Is life insurance affordable?</h3>
+                            <p>Surprisingly so, but there are a lot of options to choose from so the cost will vary, too. What you pay monthly (or yearly) will depend on things like the type and amount of life insurance 
+                                that will fit your needs, as well as your age and health.</p>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class="column" >
+                            <h3>Isn't life insurance through my work enough?</h3>
+                            <p>Life insurance offered through your employer usually 
+                                won't give you the coverage amount you may need, and the rates 
+                                may go up year after year costing you more over time. Plus, if 
+                                you ever leave your job, you can't take your coverage with you.</p>
+                        </div>
+                        <div class="column" >
+                            <h3>What if I need a life insurance policy fast?</h3>
+                            <p>You may be eligible for our exclusive underwriting process that 
+                                uses the power of data to speed up decisions and eliminate the need 
+                                for detailed medical records so you can get your life insurance 
+                                application approved as soon as the same day.7</p>
+                        </div>
+                        <div class="column" >
+                            <h3>Can a life insurance policy earn money?</h3>
+                            <p>Yes, two ways: dividends (while not guaranteed, we’ve paid them every 
+                                year since 1872) can be taken as cash, used to pay premiums, or buy
+                                more coverage. Some policies like whole life insurance also build cash 
+                                value over time that you can use for anything throughout your life.</p>
+                        </div>
+            </div>
+            </div>
+
+            
+          </center>
+        
+        
+          <div id = "container">
+            <div id = "main"></div>
+            </div>
+          </div>
+        <footer id = "footer">
+            <div class="social">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <ul class = "list">
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "AboutUs.html">About</a></li>
+                <li><a href = "Online_Services.html">Services</a></li>
+            </ul>
+            <p>© One Future Insurance Sri Lanka 2021</p>
+            <p>Rights Reserved 2021</p>
+        </footer>
+    
+       
+        </div>
+
+       
+</body>
+</html>

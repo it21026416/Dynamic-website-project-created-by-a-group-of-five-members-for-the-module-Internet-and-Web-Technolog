@@ -1,0 +1,11 @@
+.main_heading{
+    color:#264653;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 2px;
+    /* margin-top:10px;
+    margin-left: 210px; */
+    font-size:50px;
+}
+label{
+    font-size:13px;
+}

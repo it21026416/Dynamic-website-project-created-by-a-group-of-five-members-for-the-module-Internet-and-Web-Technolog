@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=One, initial-scale=1.0">
+    <link rel = "stylesheet" href= "css/styles.css">
+    <script type = "text/javascript" src="js/slideShowRuk.js"></script>
+    <link rel = "stylesheet" href= "css/adminhomepage.css">
+    <link href="css/admin_career.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>One Future Insurance</title>
+</head>
+<script src="js/slideShowRuk.js"></script>
+<body>
+        <nav class = "nav1">
+            <div class="logo">
+                <h4>One Future Insurance</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "plans.html">Plans</a></li>
+                <li><a href = "Online_Services.html">Online Services</a></li>
+                <li><a href = "AboutUs.html">About Us</a></li>
+                <li><a href = "Careers.html">Careers</a></li>
+                <li><a href = "#">Contact Us</a></li>
+                <li><a href = "#">Events & News</a></li>
+                <li><a href = "#"><img src = "images/admin user signin.png" alt = "user" style="height: 28px; width: 28px;"></a></li>
+            </ul>
+        </nav>
+        <br>
+    <center>
+        <table class = "nav2">
+            <tr>
+                <td><a  href = "adminCustomer.html">Customer</a></td>
+                <td><a href = "adminplan.html">Policy</a></td>
+                <td><a class = "active" href = "admin_career.html">Job Vacancy</a></td>
+                <td><a href = "#">Notification</a></td>
+                <td><a href = "adminprofile.html">Profile</a></td>
+            </tr>
+        </table>
+    </center>
+
+        <br><br><br>
+
+
+        <!--JOB POSTING STARTS HERE-->
+    <h1 class="main_heading" align = "center" style="font-style:italic">Job modifications</h1>
+    <br>
+
+        <!--Form 1 i.e Create job vacancy-->
+        <form class="job_posting_forms" method="post" action="job_posting_form_process.php">
+            <h3><u>Create new job vacancy</u></h3><br>
+            <label for="job_title">Enter job title:</label><input id="job_title" type="text" name="job_title"><br><br>
+            <label for="job_id">Enter job ID: </label><input id="job_id" type="text" name="job_ID"><br><br>
+            <label for="status">Enter job status(available/expired): </label><input type="text" name ="job_status"> <br><br>
+            <label for="description">Enter job description: </label><textarea id="description" name="job_description"></textarea>
+            <br><br>
+            <input type="submit" value="Submit" name="btnSubmit">
+            <input type="reset" value="Reset"><br><br><br>
+        </form>
+        <!--Form 2 i.e Delete job vacancy-->
+        <form class="job_posting_forms" method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+            <h3><u>Delete job vacancy</u> </h3><br>
+            <label for="job_id">Enter job ID: </label><input id="job_id" type="text" name="job_ID"><br><br>
+            <input type="submit" value="Delete" name="btnSubmit">
+            <input type="reset" value="Reset">
+        </form>
+        <br><br>
+        <!--Form 3 i.e Update job vacancy-->
+        <form class="job_posting_forms" method ="post" action ="">
+            <h3><u>Update job vacancy</u></h3><br> <!--// user enters primary key of job-->
+            <label for="job_id">Enter job ID: </label><input id="job_id" type="text" name="job_ID"><br><br>
+            -------------------displays the selected vacancy using php<br>
+            <!--//display specific job in editable form-->
+            <label for="job_title">Enter job title:</label><input id="job_title" type="text" name="job_title"><br><br>
+            <label for="job_id">Enter job ID: </label><input id="job_id" type="text" name="job_ID"><br><br>
+            <label for="status">Enter job status(available/expired): </label><input type="text" name ="job_status"> <br><br>
+            <label for="description">Enter job description: </label><textarea id="description" name="job_description"></textarea>
+            <br><br>
+            <input type="submit" value="Update" name="btnSubmit">
+            <input type="reset" value="Reset">
+        </form>
+    
+    
+
+    <div id = "container" style="display: block;">
+        <div id = "main"  style="display: none;"></div>
+        </div>
+      </div>
+    <footer id = "footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <ul class = "list">
+            <li><a href = "homepage.html">Home</a></li>
+            <li><a href = "AboutUs.html">About</a></li>
+            <li><a href = "Online_Services.html">Services</a></li>
+        </ul>
+        <p>© One Future Insurance Sri Lanka 2021</p>
+        <p>Rights Reserved 2021</p>
+    </footer>
+        
+
+    
+</body>
+</html>

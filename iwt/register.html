@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=One, initial-scale=1.0">
+    <link rel= "stylesheet" href="css/styles.css">
+    <link rel= "stylesheet" href="css/register.css">
+    <script src="js/register.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>One Future Insurance</title>
+</head>
+
+<body>
+    <div class = "floatBody">
+        <nav class = "nav1">
+            <!-- Header -->
+            <div class="logo">
+                <h4>One Future Insurance</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "plans.html">Plans</a></li>
+                <li><a href = "Online_Services.html">Online Services</a></li>
+                <li><a href = "AboutUs.html">About Us</a></li>
+                <li><a href = "Careers.html">Careers</a></li>
+                <li><a href = "#">Contact Us</a></li>
+                <li><a href = "#">Events & News</a></li>
+                <li><a href = "login.html">Sign in</a></li>
+            </ul>
+        </nav>
+        <br>
+        <!-- registration -->
+        <h2> Register Yourself Now </h2>
+        <br> 
+        <img src="images/regi_pg.jpeg" alt="happy" style="width:430px; height:700px; margin-left:10px; margin-right:30px">
+          
+        <div class= "box" >
+        <div class= "container">
+         <!-- customer enters data-->
+          <form method = "post" action ="php/register.php" class="form-inline" onsubmit= "cpassword()">
+          
+          <br><br>
+          <label for="CFname">First Name:</label>
+          <input type="text"class="placeh" id="CFname" placeholder=" Enter First Name" name="CFname" required>
+          <label for="Lname">Last Name:</label>
+          <input type="text"class="placeh"  id="Lname" placeholder=" Enter Last Name" name="Lname"required>
+          <br><br>
+          <label for="address">Address  :</label>
+          <input type="text" class="placeh" id="address" placeholder=" Number/house name " cols="10"  name="address" required>
+          <label for="address1">Street/Avenue:</label>
+          <input type="text" class="placeh"  id="address1" placeholder=" Street/Avenue" name="address1" required>
+          <br> <br>
+          <label for="address2">City:</label>
+          <input type="text" class="placeh" id="address2" placeholder=" City " cols="10"  name="address2" required>
+          <label for="taxID">Taxpayer number:</label>
+          <input type="text" class="placeh"  id="taxID" placeholder=" Tax ID Number" cols="10"  name="taxID" required>
+          <br><br> 
+          <label for="bday">Birth-Date:</label>
+          <input type="date" class="placeh"  id="bday" placeholder=" Birth date" name="bday" required> <br><br>
+          <label for="mobile">Mobile:</label>
+          <input type="text" class="placeh"  id="mobile" placeholder="07xxxxxxxx" name="mobile" maxlength="10" minlength="10" required>
+          <label for="fixed" > Land-line:</label>
+          <input type="text" class="placeh" id="fixed" placeholder="01xxxxxxxx" name="fixed" maxlength="10" minlength="10" required> <br><br>
+          <label for="email">Email:</label>
+          <input type="email" class="placeh"  id="email" placeholder=" example@email.com" name="email" required><br><br>
+          <label > Policy type: </label> 
+          <select class="placeh" style= "width:170px;" name="Policies">
+          <option value="Retirement"> Retirement </option>
+          <option value="Protection"> Protection </option>
+          <option value="Health"> Health </option>
+          </select><br><br>
+          <label for="psw">Enter Password </label>
+          <input type="password" class="placeh"  placeholder=" 8 characters only" name="password" id="password"  maxlength="8" minlength="8" required>
+
+          <label for="psw-repeat"> Repeat Password</label>
+          <input type="password" class="placeh"  placeholder=" Repeat Password" name="pswrepeat" id="pswrepeat" required>
+          <br><br>
+          <hr>
+          
+          <input type="checkbox" id ="checkbox" name="info" required onclick="enable()"> All information mentioned above are true 
+          <br><br>
+          <button type="submit" id="sub" onclick="func()"> Submit</button>
+          <button type ="Reset"> Reset </reset>
+          </form> </form>
+          </div>
+           </div>
+          
+          <br>  
+          
+        <footer id = "footer">  
+            <div class="social">
+                <center>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </center>
+            </div>
+            <ul class = "list">
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "AboutUs.html">About</a></li>
+                <li><a href = "Online_Services.html">Services</a></li>
+            </ul>
+            <p>© One Future Insurance Sri Lanka 2021</p>
+            <p>Rights Reserved 2021</p>
+        </footer>
+
+
+  </body>
+</html>
+
